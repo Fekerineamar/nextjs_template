@@ -1,0 +1,50 @@
+
+.cBorder::before,.cMBorder::before{
+    content:"";
+    position:absolute;
+    top: -12px;
+    width: 60px;
+    height: 7px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}.cMBorder::before{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Btn:hover{
+    border-color: var(--primary-color) !important;
+    color: black !important;
+    transition: .3s;
+}.Card:hover{
+    background-color: var(--primary-color) !important;
+    transition: .3s;
+}
+.imgHover::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(227 227 227/90%);
+    opacity: 0;
+    transition: .5s;
+}.imgHover:hover div,.imgHover:hover:after{
+    opacity: 1 !important;
+    transition: .3s;
+}.Fborder::after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 60%;
+    background-color: white;
+}
+@media  (
+    min-width: 992px
+){.mdTop{
+   top: -76px
+}}
