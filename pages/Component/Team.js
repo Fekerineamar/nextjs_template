@@ -23,11 +23,11 @@ const Work = () => {
         </p>
       </div>
       <div className="row justify-content-center">
-        <div className="col-sm-3">
+        <div className="col-sm-10 col-md-6 col-xl-3">
           <div
             className={`text-center d-flex align-items-center justify-content-center flex-column p-2`}
           >
-            <Image src={img_1} alt={"img"} width={271} height={271} />
+            <Image src={img_1} alt={"team_1"} width={271} height={271} />
             <div className="card-body mt-3">
               <h5 className="card-title mb-3">Readable</h5>
               <h5
@@ -65,9 +65,9 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm-3">
+        <div className="col-sm-10 col-md-6 col-xl-3">
           <div className="text-center d-flex align-items-center justify-content-center flex-column p-2">
-            <Image src={img_2} alt={"img"} width={271} height={271} />
+            <Image src={img_2} alt={"team_2"} width={271} height={271} />
             <div className="card-body mt-3">
               <h5 className="card-title mb-3">Content</h5>
               <h5
@@ -105,11 +105,11 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm-3">
+        <div className="col-sm-10 col-md-6 col-xl-3">
           <div
             className={`text-center d-flex align-items-center justify-content-center flex-column p-2`}
           >
-            <Image src={img_3} alt={"img"} width={271} height={271} />
+            <Image src={img_3} alt={"team_3"} width={271} height={271} />
             <div className="card-body mt-3">
               <h5 className="card-title mb-3">Readable</h5>
               <h5
@@ -147,11 +147,11 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm-3">
+        <div className="col-sm-10 col-md-6 col-xl-3">
           <div
             className={`text-center d-flex align-items-center justify-content-center flex-column p-2`}
           >
-            <Image src={img_1} alt={"img"} width={271} height={271} />
+            <Image src={img_1} alt={"team_5"} width={271} height={271} />
             <div className="card-body mt-3">
               <h5 className="card-title mb-3">Content</h5>
               <h5

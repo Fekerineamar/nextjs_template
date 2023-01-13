@@ -18,15 +18,15 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <nav
-            class="collapse navbar-collapse m-4"
+            className="collapse navbar-collapse m-4"
             id="navbarSupportedContent"
             style={{ transition: ".2s" }}
           >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
                 <Link
                   className="nav-link text-uppercase text-dark active"
                   href="/"
@@ -34,34 +34,34 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
                   className="nav-link text-uppercase text-dark"
-                  href="/Routes/About"
+                  href="/Component/Service_section"
                 >
                   About
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
                   className="nav-link text-uppercase text-dark"
-                  href="/Routes/Services"
+                  href="/Component/Work_section"
                 >
                   Services
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
                   className="nav-link text-uppercase text-dark"
-                  href="/Routes/Team"
+                  href="/Component/Team"
                 >
                   Team
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
                   className="nav-link text-uppercase text-dark"
-                  href="/Routes/Contact"
+                  href="/Component/Contact"
                 >
                   Contact us
                 </Link>

@@ -7,36 +7,41 @@ import ico4 from "../../public/images/icon-1.png";
 
 const Analytic = () => {
   return (
-    <div className={`row ${style.bg} m-0 p-0 p-3 mt-5 align-items-start`}>
+    <div
+      className={`row m-0 p-0 p-3 mt-5 align-items-start`}
+      style={{
+        backgroundColor: "#ff5a58",
+      }}
+    >
       <div
-        className="col-sm-3 text-center text-white fw-bold p-3"
+        className="col-sm-6 col-md-3 text-center text-white fw-bold p-3"
         style={{ height: "210px" }}
       >
-        <Image src={ico3} />
+        <Image src={ico3} alt="img" />
         <h1 className="m-3 fw-bold">1000+</h1>
         <p className="fs-5">Years of Business</p>
       </div>
       <div
-        className="col-sm-3 text-center text-white fw-bold p-3"
+        className="col-sm-6 col-md-3 text-center text-white fw-bold p-3"
         style={{ height: "210px" }}
       >
-        <Image src={ico2} />
+        <Image src={ico2} alt="img_1" />
         <h1 className="m-3 fw-bold">20000+</h1>
         <p className="fs-5">Projects Delivered</p>
       </div>
       <div
-        className="col-sm-3 text-center text-white fw-bold p-3"
+        className="col-sm-6 col-md-3 text-center text-white fw-bold p-3"
         style={{ height: "210px" }}
       >
-        <Image src={ico1} />
+        <Image src={ico1} alt="img_2" />
         <h1 className="m-3 fw-bold">10000+</h1>
         <p className="fs-5">Satisfied Customers</p>
       </div>
       <div
-        className="col-sm-3 text-center text-white fw-bold p-3"
+        className="col-sm-6 col-md-3 text-center text-white fw-bold p-3"
         style={{ height: "210px" }}
       >
-        <Image src={ico4} />
+        <Image src={ico4} alt="img_3" />
         <h1 className="m-3 fw-bold">1500+</h1>
         <p className="mt-4 pt-1 fs-5">Services</p>
       </div>

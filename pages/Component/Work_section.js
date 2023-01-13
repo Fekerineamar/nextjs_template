@@ -28,7 +28,7 @@ const Work = () => {
               height: "330px",
             }}
           >
-            <Image src={ico1} className="m-2" alt={"img"} />
+            <Image src={ico1} className="m-2" alt={"ACCOUNTING"} />
             <div className="card-body p-0">
               <h5 className="card-title text-uppercase mb-5">Accounting</h5>
               <p className="card-text">
@@ -55,7 +55,7 @@ const Work = () => {
               height: "330px",
             }}
           >
-            <Image src={ico2} alt={"img"} />
+            <Image src={ico2} alt={"ADVISOR"} />
             <div className="card-body p-0">
               <h5 className="card-title text-uppercase mb-5">Advisor</h5>
               <p className="card-text">
@@ -82,7 +82,7 @@ const Work = () => {
               height: "330px",
             }}
           >
-            <Image src={ico3} alt={"img"} />
+            <Image src={ico3} alt={"INVESTMENT"} />
             <div className="card-body p-0">
               <h5 className="card-title text-uppercase mb-5">Investment</h5>
               <p className="card-text">
@@ -109,7 +109,7 @@ const Work = () => {
               height: "330px",
             }}
           >
-            <Image src={ico4} alt={"img"} />
+            <Image src={ico4} alt={"FINANCIAL"} />
             <div className="card-body p-0">
               <h5 className="card-title text-uppercase mb-5">Financial</h5>
               <p className="card-text">

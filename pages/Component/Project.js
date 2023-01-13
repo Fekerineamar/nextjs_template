@@ -8,8 +8,8 @@ import style from "../../public/css/global.module.css";
 import search_bg from "../../public/images/search-icon.png";
 const Project = () => {
   return (
-    <div className="container d-flex flex-column flex-lg-row justify-content-between align-items-center mt-5 pt-5 ">
-      <div className="position-relative">
+    <div className="container d-block d-lg-flex flex-column flex-lg-row justify-content-between align-items-center mt-5 pt-5 ">
+      <div className="position-relative m-5">
         <h2
           className={`text-uppercase fw-bold position-relative mb-3 ${style.cBorder}`}
         >
@@ -29,111 +29,114 @@ const Project = () => {
           src={img_bg}
           className="position-absolute mt-3"
           style={{ left: "-100px", zIndex: "-1" }}
+          alt="Projectimage"
         />
       </div>
-      <div className="d-flex flex-column flex-wrap col-lg-8 col-sm-12 col-12">
-        <div className="d-flex flex-comumn align-items-center mt-4 col-md-6 col-12">
+      <div className="d-inline-flex flex-column flex-wrap align-items-center mt-5 col-sm-12 col-12 col-md-6 col-lg-3 pe-md-3">
+        <div
+          className={`position-relative col-10 col-md-12 ${style.imgHover} mt-3`}
+        >
+          <Image
+            alt="img"
+            src={img_1}
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
           <div
-            className={`position-relative ${style.imgHover} mt-3 col-12 pe-3`}
+            className={`position-absolute text-center`}
+            style={{
+              left: "50%",
+              top: "50%",
+              transform: "translate(-50%,-50%)",
+              transition: ".3s",
+              zIndex: "2",
+              opacity: "0",
+            }}
           >
-            <Image
-              alt="icon"
-              src={img_1}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-            <div
-              className={`position-absolute text-center`}
-              style={{
-                left: "50%",
-                top: "50%",
-                transform: "translate(-50%,-50%)",
-                transition: ".3s",
-                zIndex: "2",
-                opacity: "0",
-              }}
-            >
-              <Image alt="icon" src={search_bg} />
-              <p className="mt-3">Established Fact</p>
-            </div>
-          </div>
-          <div className={`position-relative ${style.imgHover} mt-3 col-12`}>
-            <Image
-              alt="icon"
-              src={img_2}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-            <div
-              className={`position-absolute text-center`}
-              style={{
-                left: "50%",
-                top: "50%",
-                transform: "translate(-50%,-50%)",
-                transition: ".3s",
-                zIndex: "2",
-                opacity: "0",
-              }}
-            >
-              <Image alt="icon" src={search_bg} />
-              <p className="mt-3">Established Fact</p>
-            </div>
+            <Image alt="icon2" src={search_bg} />
+            <p className="mt-3">Established Fact</p>
           </div>
         </div>
-        <div className="d-flex flex-comumn align-items-center mt-4 col-md-6 col-12">
+        <div
+          className={`position-relative col-10 col-md-12 ${style.imgHover} mt-3`}
+        >
+          <Image
+            alt="chess_img"
+            src={img_2}
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
           <div
-            className={`position-relative ${style.imgHover} mt-3 col-12 pe-3`}
+            className={`position-absolute text-center`}
+            style={{
+              left: "50%",
+              top: "50%",
+              transform: "translate(-50%,-50%)",
+              transition: ".3s",
+              zIndex: "2",
+              opacity: "0",
+            }}
           >
-            <Image
-              alt="icon"
-              src={img_3}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-            <div
-              className={`position-absolute text-center`}
-              style={{
-                left: "50%",
-                top: "50%",
-                transform: "translate(-50%,-50%)",
-                transition: ".3s",
-                zIndex: "2",
-                opacity: "0",
-              }}
-            >
-              <Image alt="icon" src={search_bg} />
-              <p className="mt-3">Established Fact</p>
-            </div>
+            <Image alt="cash_img" src={search_bg} />
+            <p className="mt-3">Established Fact</p>
           </div>
-          <div className={`position-relative ${style.imgHover} mt-3 col-12 `}>
-            <Image
-              alt="icon"
-              src={img_4}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-            <div
-              className={`position-absolute text-center`}
-              style={{
-                left: "50%",
-                top: "50%",
-                transform: "translate(-50%,-50%)",
-                transition: ".3s",
-                zIndex: "2",
-                opacity: "0",
-              }}
-            >
-              <Image alt="icon" src={search_bg} />
-              <p className="mt-3">Established Fact</p>
-            </div>
+        </div>
+      </div>
+      <div className="d-inline-flex flex-column flex-wrap align-items-center mt-5 col-sm-12 col-12 col-md-6 col-lg-3 ">
+        <div
+          className={`position-relative col-10 col-md-12 ${style.imgHover} mt-3`}
+        >
+          <Image
+            alt="phone_image"
+            src={img_3}
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+          <div
+            className={`position-absolute text-center`}
+            style={{
+              left: "50%",
+              top: "50%",
+              transform: "translate(-50%,-50%)",
+              transition: ".3s",
+              zIndex: "2",
+              opacity: "0",
+            }}
+          >
+            <Image alt="search_ico" src={search_bg} />
+            <p className="mt-3">Established Fact</p>
+          </div>
+        </div>
+        <div
+          className={`position-relative col-10 col-md-12 ${style.imgHover} mt-3 `}
+        >
+          <Image
+            alt="icon"
+            src={img_4}
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+          <div
+            className={`position-absolute text-center`}
+            style={{
+              left: "50%",
+              top: "50%",
+              transform: "translate(-50%,-50%)",
+              transition: ".3s",
+              zIndex: "2",
+              opacity: "0",
+            }}
+          >
+            <Image alt="icon" src={search_bg} />
+            <p className="mt-3">Established Fact</p>
           </div>
         </div>
       </div>

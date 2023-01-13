@@ -11,15 +11,21 @@ const Client = () => {
     sp.forEach((span) => (span.style.backgroundColor = "#ff5a58"));
     e.target.style.backgroundColor = "#1b5a8d";
   };
+
   useEffect(() => {
-    setTimeout(() => {
-      let sp = document.querySelectorAll(".spans span");
-      sp.forEach((span) => (span.style.backgroundColor = "#ff5a58"));
-      sp[counter].style.backgroundColor = "#1b5a8d";
-      setCounter(counter + 1);
-      counter >= 2 && setCounter(0);
+    let timer = setTimeout(() => {
+      try {
+        let sp = document.querySelectorAll(".spans span");
+        sp.forEach((span) => (span.style.backgroundColor = "#ff5a58"));
+        sp[counter].style.backgroundColor = "#1b5a8d";
+        setCounter(counter + 1);
+        counter >= 2 && setCounter(0);
+      } catch (e) {
+        e && clearInterval(timer);
+      }
     }, 3500);
   }, [counter]);
+
   return (
     <div className="container mt-5 pt-5 d-flex flex-column justify-content-center align-items-center text-center">
       <div>
@@ -32,27 +38,13 @@ const Client = () => {
       <div className="row justify-content-center">
         <div>
           <div
-            className={`text-center d-flex align-items-center justify-content-center flex-column p-2 position-relative`}
+            className={`text-center d-flex align-items-center justify-content-center flex-column p-2`}
           >
-            <Image src={img} alt={"img"} />
-            <Image
-              src={bg_1}
-              alt={"img"}
-              className="position-absolute"
-              style={{
-                top: "65px",
-                left: "33%",
-              }}
-            />
-            <Image
-              src={bg_2}
-              alt={"img"}
-              className="position-absolute"
-              style={{
-                top: "40px",
-                right: "30%",
-              }}
-            />
+            <div className="d-inline-flex justify-content-between align-items-center col-sm-6 col-lg-4 col-12">
+              <Image src={bg_1} alt={"bg1"} className="d-none d-sm-block" />
+              <Image src={img} alt={"client-face"} className="mx-2" />
+              <Image src={bg_2} alt={"bg2"} className="d-none d-sm-block" />
+            </div>
             <div className="card-body my-4">
               <p className="card-text my-4 mx-auto w-75">
                 It is a long established fact that a reader will be distracted
